@@ -49,9 +49,16 @@ class ListeChainee:
     def afficher_recursif(self):
         def afficher_aux(cell) : 
             # A compléter : fonction locale
-            # ordre de la récurrence ?
-            # cas de base ? 
-            # cas général ?
+            # ordre de la récurrence ? => nb de cellules de la liste 
+            # cas de base ? => plus aucune cellule : cell est None
+            if cell is None : 
+                print("None")
+            else : 
+                # cas général ?
+                # je peux faire 1 appel récursif SI je passe une liste 
+                # dont l'ordre de récurrence a strictement diminué 
+                print(f"{cell.valeur} --> ", end="")     # affiche V1-> 
+                afficher_aux(cell.suivant) # affiche V2 -> V3 -> None  
             pass
 
         if self.tete is None: 
