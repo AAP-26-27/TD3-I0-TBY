@@ -27,12 +27,21 @@ class ListeDoublementChainee:
 
     # Ajouter en début sans oublier le double chainage et le pointeur de queue
     def inserer_tete(self, val):
+        # Si selft.tete est None 
+        #   self.tete = CelluleDoublementChainee(val)
+        #   self.queue = self.tete
+        # Sinon 
+        #   nouvelle = CelluleDoublementChainee(val, self.tete)
+        #   self.tete = nouvelle
+
+
         pass
 
     def supprimer_tete(self):      
         pass
 
     def inserer_queue(self, val):
+        # TODO : faire le dessin ! 
         pass
  
     def supprimer_queue(self):      

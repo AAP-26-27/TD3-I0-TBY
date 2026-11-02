@@ -87,6 +87,13 @@ class ListeChainee:
 
 
     def inserer_queue(self, val):
+        # TODO : 
+        # Si liste est vide : selft.tete =  Cellule(val)
+        # Sinon,
+        # cell = self.tete 
+        # Tant que cell.suivant n'est pas None 
+        #       cell = cell.suivant 
+        # cell.suivant = Cellule(val)
         pass
 
     def inserer_queue_recursif(self, val):
